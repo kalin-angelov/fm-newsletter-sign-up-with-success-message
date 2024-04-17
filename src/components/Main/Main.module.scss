@@ -1,0 +1,89 @@
+@mixin flex {
+    display: flex;
+}
+
+@mixin sectionMargin {
+    margin: 25px;
+}
+
+@mixin colorFontAndOther {
+    color: hsl(235, 18%, 26%);
+    padding: 5px 0;
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+.mainContainerMobile {
+    background-color: hsl(0, 0%, 100%);
+    @include flex();
+    flex-direction: column;
+    max-width: 375px;
+    margin: calc((100vh - 845px) /2) auto;
+}
+
+.mainContainerDesktop {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 35px;
+    margin: calc((100vh - 640px) /2) auto;
+    padding: 22px;
+    width: 930px;
+    display: grid;
+    grid-template-areas: 
+    "information image"
+    "form image";
+    grid-template-columns: 450px 400px;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.imageSection {
+    grid-area: image;
+}
+
+.informationSection {
+    @include sectionMargin();
+    grid-area: information;
+
+    h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    
+    p {
+       @include colorFontAndOther();
+        margin: 15px 0;
+    }
+
+    li {
+        @include flex();
+        gap: 18px;
+        @include colorFontAndOther();
+    }
+}
+
+.formSection {
+    @include sectionMargin();
+    margin-top: 0;
+    grid-area: form;
+}
+
+@media screen and (min-width: 1020px) {
+    .informationSection {
+        h1 {
+            font-size: 55px;
+        }
+    }
+
+    .informationSection {
+        padding: 15px 15px 0 15px;
+        margin-bottom: 0;
+    }
+
+    .formSection {
+        margin: 0 0 50px 0;
+        padding: 0 36px;
+    }
+}
