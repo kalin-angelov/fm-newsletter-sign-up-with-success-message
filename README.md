@@ -1,8 +1,61 @@
-# React + Vite
+# Frontend Mentor - Newsletter sign-up form with success message solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Add their email and submit the form
+- See a success message with their email after successfully submitting the form
+- See form validation messages if:
+  - The field is left empty
+  - The email address is not formatted correctly
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+### Screenshot
+
+![Desktop Screenshot](public/screenshot/Screenshot%20.png)
+
+### Links
+
+- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Live Site URL: [Add live site URL here](https://fm-newsletter-sign-up-with-success-message.vercel.app/)
+
+## My process
+
+### Built with
+
+- Semantic HTML5 markup
+- Sass
+- Flexbox
+- CSS Grid
+- [Vite](https://vitejs.dev/) - Vite library
+- [React](https://reactjs.org/) - JS library
+
+### What I learned
+
+In this exercise i learn how to center an element with the `CSS` `calc()` function.
+
+### Useful resources
+
+- [Svg Converter](https://svg2jsx.com/) - This helped me to convert the Svg images to valid JSX component.
+
+## Author
+
+- Frontend Mentor - [@kalin-angelov](https://www.frontendmentor.io/profile/kalin-angelov)
