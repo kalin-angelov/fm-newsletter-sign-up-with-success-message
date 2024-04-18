@@ -10,7 +10,7 @@
   background-color: hsl(0, 0%, 100%);
   border-radius: 35px;
   margin: calc((100vh - 640px) / 2) auto;
-  padding: 22px;
+  padding: 23px;
   width: 930px;
   display: grid;
   grid-template-areas: "information image" "form image";
@@ -43,7 +43,7 @@
 }
 .informationSection li {
   display: flex;
-  gap: 18px;
+  gap: 16px;
   color: hsl(235, 18%, 26%);
   padding: 5px 0;
   line-height: 1.5;
@@ -58,14 +58,14 @@
 
 @media screen and (min-width: 1020px) {
   .informationSection h1 {
-    font-size: 55px;
+    font-size: 56px;
   }
   .informationSection {
-    padding: 15px 15px 0 15px;
+    padding: 20px 15px 0 15px;
     margin-bottom: 0;
   }
   .formSection {
     margin: 0 0 50px 0;
-    padding: 0 36px;
+    padding: 0 34px;
   }
 }/*# sourceMappingURL=Main.module.css.map */

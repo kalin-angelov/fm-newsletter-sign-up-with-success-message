@@ -1,13 +1,15 @@
 import styles from "./Main.module.css";
 
+import { useEffect, useState, useContext } from "react";
+
+import { Context } from "../../context/Context";
 import IllustrationSignUpDesktop from "../Icons/IllustrationSignUpDesktop";
 import IllustrationSignUpMobile from "../Icons/IllustrationSignUpMobile";
 import IconList from "../Icons/IconList";
 import Form from "../Form/Form";
 
-import { useEffect, useState } from "react";
-
 const Main = () => {
+  const { email, setEmail } = useContext(Context);
   const [windowWith, setWindowWith] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -42,7 +44,7 @@ const Main = () => {
         </ul>
       </section>
       <section className={styles.formSection}>
-        <Form />
+        <Form  email={email} setEmail={setEmail}/>
       </section>
     </main>
   );
