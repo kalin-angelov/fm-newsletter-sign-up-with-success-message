@@ -2,10 +2,15 @@
   display: flex;
   flex-direction: column;
 }
-.form label {
+.form .label {
+  display: flex;
+  justify-content: space-between;
   font-size: 13px;
-  font-weight: 700;
+  font-weight: bolder;
   margin-top: 10px;
+}
+.form .label .error {
+  color: hsl(4, 100%, 67%);
 }
 .form input {
   padding: 18px;
@@ -14,6 +19,11 @@
   border: 1px solid hsl(231, 7%, 60%);
   margin: 10px 0 22px 0;
   font-weight: 700;
+}
+.form .inputError {
+  border-color: hsl(4, 100%, 67%);
+  background-color: #ffe8e6;
+  color: hsl(4, 100%, 67%);
 }
 .form button {
   color: hsl(0, 0%, 100%);

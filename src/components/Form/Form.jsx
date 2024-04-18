@@ -1,23 +1,35 @@
 import styles from "./Form.module.css";
 
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Form = () => {
-    const [email, setEmail] = useState('');
+const Form = ({ email, setEmail }) => {
+    const navigate = useNavigate();
+    const [error, setError] = useState(null);
     
     const submitEmail = (e) => {
         e.preventDefault();
         if (email === '') {
-            console.error('input is empty')
+            setError(true);
+            return;
+        };
+
+        if (/[a-zA-Z0-9]+@[a-zA-z]+\.[a-zA-Z]+/.test(email)) {
+            setError(null);
+            navigate('/success');
         } else {
-            console.log(email);
+            setError(true);
         };
     };
 
     return (
         <form className={styles.form} onSubmit={(e) => submitEmail(e)}>
-            <label htmlFor="email">Email address</label>
+            <section className={styles.label}>
+                <p>Email address</p>
+                {error && <p className={styles.error}>Valid email required</p>}
+            </section>
             <input 
+                className={error ? styles.inputError : null}
                 type="text"
                 id="email"
                 name="email"
