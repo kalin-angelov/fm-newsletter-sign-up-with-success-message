@@ -1,0 +1,12 @@
+.footer {
+    color: whitesmoke;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    a {
+        color: blueviolet;
+        &:hover {
+            color: red;
+        }
+    }
+}

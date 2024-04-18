@@ -1,0 +1,12 @@
+.footer {
+  color: whitesmoke;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+.footer a {
+  color: blueviolet;
+}
+.footer a:hover {
+  color: red;
+}/*# sourceMappingURL=Footer.module.css.map */
