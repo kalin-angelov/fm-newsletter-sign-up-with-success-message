@@ -25,8 +25,8 @@ const Form = ({ email, setEmail }) => {
     return (
         <form className={styles.form} onSubmit={(e) => submitEmail(e)}>
             <section className={styles.label}>
-                <p>Email address</p>
-                {error && <p className={styles.error}>Valid email required</p>}
+                <h2>Email address</h2>
+                {error && <h2 className={styles.error}>Valid email required</h2>}
             </section>
             <input 
                 className={error ? styles.inputError : null}
