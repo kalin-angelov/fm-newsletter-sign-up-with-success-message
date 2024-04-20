@@ -16,7 +16,7 @@ const Message = () => {
     };
 
     return (
-        <article className={styles.messageMainContainer}>
+        <div className={styles.messageMainContainer}>
             <section className={styles.messageInfo}>
                 <IconSuccess />
                 <h1>Thanks for subscribing!</h1>
@@ -25,7 +25,7 @@ const Message = () => {
                 </p>
             </section>
             <button onClick={onClickBtn}>Dismiss message</button>
-        </article>
+        </div>
     );
 };
 
