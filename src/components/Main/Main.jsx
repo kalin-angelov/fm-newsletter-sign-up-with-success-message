@@ -27,13 +27,13 @@ const Main = () => {
 
   return (
     <main className={windowWith >= 1020 ? styles.mainContainerDesktop : styles.mainContainerMobile}>
-      <section className={styles.imageSection}>
+      <div className={styles.imageSection}>
         {windowWith >= 1024 ?
           <IllustrationSignUpDesktop />
           :
           <IllustrationSignUpMobile />
         }
-      </section>
+      </div>
       <section className={styles.informationSection}>
         <h1>Stay updated!</h1>
         <p>Join 60,000+ product managers receiving monthly updates on:</p>
@@ -43,9 +43,9 @@ const Main = () => {
           <li><IconList /> And much more!</li>
         </ul>
       </section>
-      <section className={styles.formSection}>
+      <div className={styles.formSection}>
         <Form  email={email} setEmail={setEmail}/>
-      </section>
+      </div>
     </main>
   );
 };
