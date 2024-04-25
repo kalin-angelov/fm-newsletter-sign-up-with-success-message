@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Main />}/>
           <Route path="/success" element={<Message />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </>
     </Context.Provider>
   );
