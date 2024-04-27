@@ -4,7 +4,6 @@ import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
 
 import Main from "./components/Main/Main";
-import Footer from "./components/Footer/Footer";
 import Message from "./components/Message/Message";
 import { Context } from "./context/Context";
 
@@ -22,7 +21,6 @@ function App() {
           <Route path="/" element={<Main />}/>
           <Route path="/success" element={<Message />} />
         </Routes>
-        {/* <Footer /> */}
       </>
     </Context.Provider>
   );
